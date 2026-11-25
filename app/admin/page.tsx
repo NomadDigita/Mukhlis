@@ -83,7 +83,6 @@ export default function Admin() {
           retryDelays: [0, 1500, 3000, 6000, 10000],
           headers: { authorization: `Bearer ${session.access_token}`, apikey: apiKey, 'x-upsert': 'false' },
           metadata: { bucketName: 'portfolio-media', objectName: path, contentType: file.type, cacheControl: '3600' },
-          allowedMetaFields: ['bucketName', 'objectName', 'contentType', 'cacheControl'],
           uploadDataDuringCreation: true,
           removeFingerprintOnSuccess: true,
           onProgress(bytesSent, bytesTotal) { setProgress(Math.min(100, Math.round(bytesSent / bytesTotal * 100))); setMessage(`Uploading ${Math.round(bytesSent / 1024 / 1024)} of ${Math.ceil(bytesTotal / 1024 / 1024)} MiB…`); },
