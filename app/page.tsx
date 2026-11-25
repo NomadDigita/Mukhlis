@@ -113,7 +113,7 @@ export default function Home() {
         <p className="eyebrow"><span className="eyebrow-rule"/>{t.eyebrow}</p>
         <h1 id="hero-title">{t.titleA}<br/><em>{t.titleB}</em><br/>{t.titleC} <em>{t.titleD}</em></h1>
         <p className="hero-intro">{t.intro}</p>
-        <div className="hero-actions"><a className="button button-primary" href="#work">{t.viewWork}<span aria-hidden="true">↗</span></a><a className="button button-text" href="/cv">{t.viewCv}<span aria-hidden="true">↗</span></a></div>
+        <div className="hero-actions"><a className="button button-primary" href="#work">{t.viewWork}<span className="arrow-mark" aria-hidden="true"/></a><a className="button button-text" href="/cv">{t.viewCv}<span className="arrow-mark" aria-hidden="true"/></a></div>
       </div>
       <div className="hero-art" aria-hidden="true"><span className="art-orbit orbit-one"/><span className="art-orbit orbit-two"/><span className="art-arabic">م</span><span className="art-caption">{t.heroNote}</span></div>
       <div className="hero-arabic" lang="ar" dir="rtl">{t.arabicLine}</div>
@@ -136,7 +136,7 @@ export default function Home() {
 
     <section className="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
       <div className="section-topline"><p className="eyebrow">{t.contactEyebrow}</p><span>03 / 03</span></div>
-      <div className="contact-grid"><h2 id="contact-title">{t.contactTitle}</h2><div><p>{t.contactText}</p><a className="contact-link" href="mailto:institutionofaladeeby@gmail.com">{t.contact}<span aria-hidden="true">↗</span></a><div className="contact-details"><a href="mailto:institutionofaladeeby@gmail.com">institutionofaladeeby@gmail.com</a><a href="tel:+2347058572466">+234 705 857 2466</a></div></div></div>
+      <div className="contact-grid"><h2 id="contact-title">{t.contactTitle}</h2><div><p>{t.contactText}</p><a className="contact-link" href="mailto:institutionofaladeeby@gmail.com">{t.contact}<span className="arrow-mark" aria-hidden="true"/></a><div className="contact-details"><a href="mailto:institutionofaladeeby@gmail.com">institutionofaladeeby@gmail.com</a><a href="tel:+2347058572466">+234 705 857 2466</a></div></div></div>
     </section>
 
     <footer className="site-footer"><span>© {new Date().getFullYear()} Mukhlis Muhammad Jamiu</span><span>{t.footer}</span><a href="/admin">{t.admin}</a></footer>
